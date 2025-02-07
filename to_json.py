@@ -23,7 +23,7 @@ for i in range(len(FILES)):
             total = total.replace("\n", " ")
             nS = {"text": total}
             nS = json.dumps(nS)
-            nS += "\n,"
+            nS += "\n"
             n.write(nS)
             total = ""
         elif (total in DELIMITERS):
